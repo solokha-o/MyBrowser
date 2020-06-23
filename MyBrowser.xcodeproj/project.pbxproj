@@ -9,23 +9,27 @@
 /* Begin PBXBuildFile section */
 		DBA885F224A2448500DE7577 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA885F124A2448500DE7577 /* AppDelegate.swift */; };
 		DBA885F424A2448500DE7577 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA885F324A2448500DE7577 /* SceneDelegate.swift */; };
-		DBA885F624A2448500DE7577 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA885F524A2448500DE7577 /* ViewController.swift */; };
+		DBA885F624A2448500DE7577 /* MyBrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA885F524A2448500DE7577 /* MyBrowserViewController.swift */; };
 		DBA885F924A2448500DE7577 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBA885F724A2448500DE7577 /* Main.storyboard */; };
 		DBA885FC24A2448500DE7577 /* MyBrowser.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DBA885FA24A2448500DE7577 /* MyBrowser.xcdatamodeld */; };
 		DBA885FE24A2448800DE7577 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBA885FD24A2448800DE7577 /* Assets.xcassets */; };
 		DBA8860124A2448800DE7577 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBA885FF24A2448800DE7577 /* LaunchScreen.storyboard */; };
+		DBA8860924A2464200DE7577 /* LoadRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA8860824A2464200DE7577 /* LoadRequestModel.swift */; };
+		DBA8860C24A2470C00DE7577 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBA8860B24A2470C00DE7577 /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DBA885EE24A2448500DE7577 /* MyBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBA885F124A2448500DE7577 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DBA885F324A2448500DE7577 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DBA885F524A2448500DE7577 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DBA885F524A2448500DE7577 /* MyBrowserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBrowserViewController.swift; sourceTree = "<group>"; };
 		DBA885F824A2448500DE7577 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DBA885FB24A2448500DE7577 /* MyBrowser.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyBrowser.xcdatamodel; sourceTree = "<group>"; };
 		DBA885FD24A2448800DE7577 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DBA8860024A2448800DE7577 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DBA8860224A2448800DE7577 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBA8860824A2464200DE7577 /* LoadRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadRequestModel.swift; sourceTree = "<group>"; };
+		DBA8860B24A2470C00DE7577 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBA8860C24A2470C00DE7577 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +49,7 @@
 			children = (
 				DBA885F024A2448500DE7577 /* MyBrowser */,
 				DBA885EF24A2448500DE7577 /* Products */,
+				DBA8860A24A2470C00DE7577 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,7 +66,8 @@
 			children = (
 				DBA885F124A2448500DE7577 /* AppDelegate.swift */,
 				DBA885F324A2448500DE7577 /* SceneDelegate.swift */,
-				DBA885F524A2448500DE7577 /* ViewController.swift */,
+				DBA885F524A2448500DE7577 /* MyBrowserViewController.swift */,
+				DBA8860824A2464200DE7577 /* LoadRequestModel.swift */,
 				DBA885F724A2448500DE7577 /* Main.storyboard */,
 				DBA885FD24A2448800DE7577 /* Assets.xcassets */,
 				DBA885FF24A2448800DE7577 /* LaunchScreen.storyboard */,
@@ -68,6 +75,14 @@
 				DBA885FA24A2448500DE7577 /* MyBrowser.xcdatamodeld */,
 			);
 			path = MyBrowser;
+			sourceTree = "<group>";
+		};
+		DBA8860A24A2470C00DE7577 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DBA8860B24A2470C00DE7577 /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,7 +157,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DBA885FC24A2448500DE7577 /* MyBrowser.xcdatamodeld in Sources */,
-				DBA885F624A2448500DE7577 /* ViewController.swift in Sources */,
+				DBA8860924A2464200DE7577 /* LoadRequestModel.swift in Sources */,
+				DBA885F624A2448500DE7577 /* MyBrowserViewController.swift in Sources */,
 				DBA885F224A2448500DE7577 /* AppDelegate.swift in Sources */,
 				DBA885F424A2448500DE7577 /* SceneDelegate.swift in Sources */,
 			);
@@ -298,7 +314,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Oleksandr-Solokha.MyBrowser";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -316,7 +332,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Oleksandr-Solokha.MyBrowser";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
