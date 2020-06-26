@@ -39,6 +39,23 @@
                                     <wkPreferences key="preferences"/>
                                 </wkWebViewConfiguration>
                             </wkWebView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xNu-kW-Vub">
+                                <rect key="frame" x="0.0" y="818" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="back" id="ys4-3q-pme">
+                                        <connections>
+                                            <action selector="goBackButtonAction:" destination="BYZ-38-t0r" id="RsF-dY-cqj"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem id="tkE-bu-aMg"/>
+                                    <barButtonItem title="forward" id="wWc-4c-0kg">
+                                        <connections>
+                                            <action selector="goForwardButtonAction:" destination="BYZ-38-t0r" id="bWp-21-iug"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -55,7 +72,10 @@
                     <navigationItem key="navigationItem" id="Bgg-t2-ET4"/>
                     <connections>
                         <outlet property="enterLinkTextField" destination="CP3-QE-VQP" id="JXw-a1-ybD"/>
+                        <outlet property="goBackButtonOutlet" destination="ys4-3q-pme" id="4WQ-e1-wjz"/>
+                        <outlet property="goForwardButtonOutlet" destination="wWc-4c-0kg" id="Vrj-E2-wdJ"/>
                         <outlet property="loadLinkButtonOutlet" destination="t2A-GC-Jcz" id="czH-BM-Jfw"/>
+                        <outlet property="toolBar" destination="xNu-kW-Vub" id="Pxg-Q7-ysG"/>
                         <outlet property="webView" destination="3Zs-2S-ZQb" id="x7S-bI-zVK"/>
                     </connections>
                 </viewController>
