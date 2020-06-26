@@ -56,7 +56,6 @@ class MyBrowserViewController: UIViewController {
         goBackButtonOutlet.image = chevronLeft
         let chevronRight = UIImage(systemName: "chevron.right")
         goForwardButtonOutlet.image = chevronRight
-        navigationController?.navigationBar.prefersLargeTitles = true
         navigationItem.title = webView.title
         //configure progressView
         progressView = UIProgressView(progressViewStyle: .default)
@@ -78,5 +77,6 @@ class MyBrowserViewController: UIViewController {
         let space = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: self, action: nil)
         toolBar.setItems([goBackButtonOutlet, space, goForwardButtonOutlet], animated: true)
     }
+    
 }
 

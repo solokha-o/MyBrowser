@@ -39,9 +39,8 @@
                                     <wkPreferences key="preferences"/>
                                 </wkWebViewConfiguration>
                             </wkWebView>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xNu-kW-Vub">
-                                <rect key="frame" x="0.0" y="818" width="414" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xNu-kW-Vub">
+                                <rect key="frame" x="0.0" y="817" width="414" height="44"/>
                                 <items>
                                     <barButtonItem title="back" id="ys4-3q-pme">
                                         <connections>
@@ -59,8 +58,11 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="xNu-kW-Vub" firstAttribute="trailing" secondItem="3Zs-2S-ZQb" secondAttribute="trailing" id="HNY-cZ-6Hy"/>
+                            <constraint firstItem="xNu-kW-Vub" firstAttribute="leading" secondItem="3Zs-2S-ZQb" secondAttribute="leading" id="MBQ-eU-nV9"/>
                             <constraint firstItem="IOJ-LW-MJk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Qdx-TO-dLz"/>
                             <constraint firstItem="3Zs-2S-ZQb" firstAttribute="top" secondItem="IOJ-LW-MJk" secondAttribute="bottom" id="Rrg-wT-vA1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="xNu-kW-Vub" secondAttribute="bottom" constant="1" id="TvE-Se-9g3"/>
                             <constraint firstItem="3Zs-2S-ZQb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Z3z-aK-Zob"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IOJ-LW-MJk" secondAttribute="trailing" id="fnG-fB-Pqo"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3Zs-2S-ZQb" secondAttribute="trailing" id="m00-nu-zpx"/>
