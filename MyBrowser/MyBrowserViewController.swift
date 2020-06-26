@@ -9,7 +9,6 @@
 import UIKit
 import WebKit
 
-
 class MyBrowserViewController: UIViewController {
     
     @IBOutlet weak var enterLinkTextField: UITextField! {
@@ -67,14 +66,6 @@ class MyBrowserViewController: UIViewController {
         progressView.autoresizingMask = [.flexibleWidth, .flexibleTopMargin]
         progressView.progress = Float(webView.estimatedProgress)
         navigationController?.navigationBar.addSubview(progressView)
-    }
-    // configure didFinish navigation
-    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
-        progressView.isHidden = true
-    }
-    //configure didStartProvisionalNavigation navigation
-    func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {
-        progressView.isHidden = false
     }
     //setup estimated progress observer
     func setupEstimatedProgressObserver() {
